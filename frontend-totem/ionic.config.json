@@ -1,0 +1,7 @@
+{
+  "name": "frontend-totem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

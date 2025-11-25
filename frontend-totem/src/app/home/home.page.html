@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Autoatendimento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="container">
+    <div class="instruction">
+      <h1>Bem-vindo!</h1>
+      <p>Por favor, selecione o tipo de atendimento:</p>
+    </div>
+
+    <ion-button expand="block" class="btn-totem prioridade" (click)="pedirSenha('SP', 'Atendimento Prioritário')">
+      <ion-icon name="accessibility-outline" slot="start"></ion-icon>
+      <div class="btn-text">
+        <strong>PRIORITÁRIO</strong>
+        <small>Gestantes, Idosos, PNE</small>
+      </div>
+    </ion-button>
+
+    <ion-button expand="block" class="btn-totem exames" (click)="pedirSenha('SE', 'Retirada de Exames')">
+      <ion-icon name="document-text-outline" slot="start"></ion-icon>
+      <div class="btn-text">
+        <strong>EXAMES</strong>
+        <small>Retirada e Resultados</small>
+      </div>
+    </ion-button>
+
+    <ion-button expand="block" class="btn-totem geral" (click)="pedirSenha('SG', 'Atendimento Geral')">
+      <ion-icon name="people-outline" slot="start"></ion-icon>
+      <div class="btn-text">
+        <strong>GERAL</strong>
+        <small>Outros serviços</small>
+      </div>
+    </ion-button>
+
+  </div>
+
+</ion-content>

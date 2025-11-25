@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.instruction {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  h1 {
+    font-size: 2rem;
+    color: var(--ion-color-dark);
+  }
+}
+
+.btn-totem {
+  height: 120px; /* Botões bem altos */
+  margin-bottom: 20px;
+  --border-radius: 15px;
+  font-size: 1.2rem;
+
+  ion-icon {
+    font-size: 3rem;
+    margin-right: 15px;
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    strong {
+      font-size: 1.5rem;
+    }
+    
+    small {
+      font-size: 0.9rem;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+  }
+}
+
+/* Cores específicas */
+.prioridade {
+  --background: #ffc409; /* Amarelo Warning */
+  --color: #000;
+}
+
+.exames {
+  --background: #3880ff; /* Azul Primary */
+}
+
+.geral {
+  --background: #2dd36f; /* Verde Success */
+}
+
+/* Estilo para o Alerta de Senha */
+.senha-alert {
+  --backdrop-opacity: 0.8;
+
+  .alert-message {
+    font-size: 50px !important;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .alert-sub-title {
+    font-size: 1.2rem;
+    color: var(--ion-color-medium);
+  }
+}
