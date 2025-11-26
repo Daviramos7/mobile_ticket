@@ -18,4 +18,3 @@ CREATE TABLE IF NOT EXISTS atendimentos (
 );
 
 INSERT INTO atendimentos (data_emissao, tipo_senha, sequencia_diaria, senha_formatada, status)
-VALUES (CURDATE(), 'SP', 1, '251119-SP1', 'PENDENTE');
